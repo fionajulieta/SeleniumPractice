@@ -15,6 +15,7 @@ Untuk menyelesaikan tugas ini, Anda perlu melakukan hal berikut:
 
 Isi Project:
 Note: Project ini menggunakan website https://www.saucedemo.com/v1/index.html
+Untuk running testing pada project ini, bisa ketik diterminal --> ./gradlew cucumber
 Terdapat 2 feature file dalam project ini untuk testing fitur login dan fitur add item to shopping cart:
 1. Feature: Login
    - Scenario: Login with valid email and valid password
