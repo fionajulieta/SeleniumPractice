@@ -14,7 +14,27 @@ Untuk menyelesaikan tugas ini, Anda perlu melakukan hal berikut:
   README juga harus menyertakan informasi yang relevan tentang penyiapan dan konfigurasi proyek.
 
 Isi Project:
-Terdapat 2 feature file dalam project ini untuk testing fitur login dan fitur add item to shopping cart
-Dari scenario-scenario yg ada, ada ditemukan 3 error pada fitur add item to shopping cart, sebagai berikut:
-![image](https://github.com/fionajulieta/SeleniumPractice/assets/146444371/371c7ba6-a177-4510-8319-ba8dd5622732)
+Terdapat 2 feature file dalam project ini untuk testing fitur login dan fitur add item to shopping cart:
+1. Feature: Login
+   - Scenario: Login with valid email and valid password
+   - Scenario: Login with valid email and invalid password
+   - Scenario: Login with invalid email and invalid password
+   - Scenario: Login with a locked-out user account
+2. Feature: Move Item From Home Inventory to Shopping Cart --> testing fungsi 'Add to Cart' pada setiap item yang ada menggunakan 2 user yang berbeda ('standard_user' dan 'problem_user')
+   - Scenario: Adding item 1 to shopping cart (normal user)
+   - Scenario: Adding item 2 to shopping cart (normal user)
+   -  Scenario: Adding item 3 to shopping cart (normal user)
+   -  Scenario: Adding item 4 to shopping cart (normal user)
+   -  Scenario: Adding item 5 to shopping cart (normal user)
+   -  Scenario: Adding item 6 to shopping cart (normal user)
+   -  Scenario: Adding item 1 to shopping cart (problem user)
+   -  Scenario: Adding item 2 to shopping cart (problem user)
+   -  Scenario: Adding item 3 to shopping cart (problem user)
+   -  Scenario: Adding item 4 to shopping cart (problem user)
+   -  Scenario: Adding item 5 to shopping cart (problem user)
+   -  Scenario: Adding item 6 to shopping cart (problem user)
+
+Dari scenario-scenario yg ada, ada ditemukan 3 error pada fitur "Move Item From Home Inventory to Shopping Cart", sebagai berikut:
+![image](https://github.com/fionajulieta/SeleniumPractice/assets/146444371/02424c58-f582-4b4d-b119-1ba6b2214bc8)
+
 
