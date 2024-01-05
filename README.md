@@ -14,6 +14,7 @@ Untuk menyelesaikan tugas ini, Anda perlu melakukan hal berikut:
   README juga harus menyertakan informasi yang relevan tentang penyiapan dan konfigurasi proyek.
 
 Isi Project:
+Note: Project ini menggunakan website https://www.saucedemo.com/v1/index.html
 Terdapat 2 feature file dalam project ini untuk testing fitur login dan fitur add item to shopping cart:
 1. Feature: Login
    - Scenario: Login with valid email and valid password
