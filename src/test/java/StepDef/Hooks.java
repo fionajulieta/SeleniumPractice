@@ -4,11 +4,15 @@ import Helper.Utility;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-public class Hooks extends Utility {
+import static Helper.Utility.driver;
+import static Helper.Utility.startDriver;
+
+public class Hooks {
 
     @Before
     public void beforeTest() {
         System.out.println("Start of scenario");
+        startDriver();
 
     }
 
@@ -16,7 +20,7 @@ public class Hooks extends Utility {
     public void afterTest() throws InterruptedException {
         System.out.println("End of scenario");
         Thread.sleep(2000);
-//        driver.close();
+        driver.close();
     }
 
 }

@@ -1,4 +1,4 @@
-Feature: Shopping Cart
+Feature: Move Item From Home Inventory to Shopping Cart
 
   @Add-Item-1-to-Shopping-Cart-Normal
   Scenario: Adding item 1 to shopping cart (normal user)
