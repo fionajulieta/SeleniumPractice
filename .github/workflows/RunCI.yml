@@ -24,6 +24,9 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+        
+    - name: Setup Chrome
+      uses: browser-actions/setup-chrome@v1.4.0
 
     - name: Build with Gradle
       run: chmod +x gradlew
@@ -31,16 +34,9 @@ jobs:
     - name: run all cucumber selenium test case
       run: ./gradlew cucumber
       
-    - name: Upload artifact archive test result
-      uses: actions/upload-pages-artifact@v3.0.0
+    - name: Deploy report to Github Pages
       if: always()
+      uses: peaceiris/actions-gh-pages@v3.7.3
       with:
-        name: Cucumber Report
-        path: report
-        
-    - name: Deploy to GitHub Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v3.9.3
-      with:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PUBLISH_DIR: report
+       PERSONAL_TOKEN: ${{ secrets.TOKEN_DEPLOY_FINAL_PROJECT }}
+       PUBLISH_DIR: report
