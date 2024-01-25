@@ -39,5 +39,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.9.3
       with:
        PERSONAL_TOKEN: ${{ secrets.DEPLOY_SELENIUM }}
-       PUBLISH_DIR: report
-#
+       PUBLISH_DIR: target
+
