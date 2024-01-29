@@ -33,6 +33,13 @@ jobs:
       
     - name: run all cucumber selenium test case
       run: ./gradlew cucumber
+
+    - name: Archive test result
+      uses: actions/upload-artifact@v4.3.0
+      if: always()
+      with:
+       name: cucumber report
+       path: target
       
     - name: Deploy report to Github Pages
       if: always()
