@@ -36,7 +36,7 @@ Terdapat 2 feature file dalam project ini untuk testing fitur login dan fitur ad
    -  Scenario: Adding item 5 to shopping cart (problem user)
    -  Scenario: Adding item 6 to shopping cart (problem user)
 
-Dari scenario-scenario yg ada, ada ditemukan 3 error pada fitur "Move Item From Home Inventory to Shopping Cart", sebagai berikut:
+Dari scenario-scenario yg ada, ada ditemukan/terdetect 3 error pada fitur "Move Item From Home Inventory to Shopping Cart" (maka dari itu run CI/CD di github action menjadi failed), sebagai berikut:
 ![image](https://github.com/fionajulieta/SeleniumPractice/assets/146444371/02424c58-f582-4b4d-b119-1ba6b2214bc8)
 
 
